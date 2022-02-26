@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="7" short-name="centauri-calendar" url="https://polygon.codeforces.com/p7j9x7D/andrewzta/centauri-calendar">
+    <names>
+        <name language="russian" value="Календарь на Альфе Центавра"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <tutorials>
+        <tutorial charset="UTF-8" language="russian" mathjax="true" path="statements/russian/tutorial.tex" type="application/x-tex"/>
+        <tutorial language="russian" path="statements/.pdf/russian/tutorial.pdf" type="application/pdf"/>
+    </tutorials>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>536870912</memory-limit>
+            <test-count>91</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen" from-file="2" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="3" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="4" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="5" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="6" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="7" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="8" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="9" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="11" group="1" method="generated" points="16.0"/>
+                <test cmd="gen" from-file="12" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="13" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="14" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="15" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="16" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="17" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="18" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="19" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="20" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="21" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="22" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="23" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="24" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="25" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="26" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="27" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="28" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="29" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="30" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="31" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="32" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="33" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="34" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="35" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="36" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="37" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="38" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="39" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="40" group="2" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="41" group="2" method="generated" points="16.0"/>
+                <test cmd="gen" from-file="42" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="43" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="44" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="45" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="46" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="47" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="48" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="49" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="50" group="3" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="51" group="3" method="generated" points="17.0"/>
+                <test cmd="gen" from-file="52" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="53" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="54" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="55" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="56" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="57" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="58" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="59" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="60" group="4" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="61" group="4" method="generated" points="17.0"/>
+                <test cmd="gen" from-file="62" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="63" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="64" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="65" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="66" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="67" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="68" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="69" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="70" group="5" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="71" group="5" method="generated" points="17.0"/>
+                <test cmd="gen" from-file="72" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="73" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="74" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="75" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="76" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="77" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="78" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="79" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="80" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="81" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="82" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="83" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="84" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="85" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="86" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="87" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="88" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="89" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="90" group="6" method="generated" points="0.0"/>
+                <test cmd="gen" from-file="91" group="6" method="generated" points="17.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="complete" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="icpc" name="1" points="16.0" points-policy="complete-group"/>
+                <group feedback-policy="icpc" name="2" points="16.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="icpc" name="3" points="17.0" points-policy="complete-group"/>
+                <group feedback-policy="icpc" name="4" points="17.0" points-policy="complete-group"/>
+                <group feedback-policy="icpc" name="5" points="17.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="4"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="icpc" name="6" points="17.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                        <dependency group="5"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen.py" type="python.3"/>
+                <binary path="files/gen.pys3" type="pythonx.3"/>
+            </executable>
+            <executable>
+                <source path="files/validate.cpp" type="cpp.g++17"/>
+                <binary path="files/validate.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validate.cpp" type="cpp.g++17"/>
+                <binary path="files/validate.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/calendar_as.cpp" type="cpp.g++17"/>
+                <binary path="solutions/calendar_as.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="easy"/>
+        <tag value="math"/>
+    </tags>
+</problem>

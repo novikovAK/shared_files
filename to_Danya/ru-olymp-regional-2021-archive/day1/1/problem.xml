@@ -1,0 +1,170 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<problem
+	version = "1.0"
+	id = "ru.olymp.spb.2021.day1.two-machines"
+>
+	<judging>
+		<script type = "%icpc">
+			<testset
+				input-name = "*"
+				output-name = "*"
+				input-href = "tests/##"
+				answer-href = "tests/##.a"
+				time-limit = "1.0s"
+				memory-limit = "536870912"
+				test-count = "73"
+			>
+			</testset>
+			<verifier type = "%testlib">
+				<binary executable-id = "x86.exe.win32" file = "check.exe" />
+			</verifier>
+		</script>
+		<script type = "%ioi">
+			<testset
+				name = "preliminary"
+				input-name = "*"
+				output-name = "*"
+				input-href = "tests/##"
+				answer-href = "tests/##.a"
+				time-limit = "1.0s"
+				memory-limit = "536870912"
+			>
+				<test comment = "manual cmd: ''" />
+			</testset>
+			<testset
+				name = "main"
+				input-name = "*"
+				output-name = "*"
+				input-href = "tests/##"
+				answer-href = "tests/##.a"
+				time-limit = "1.0s"
+				memory-limit = "536870912"
+			>
+				<test-group
+					comment = "Sample tests"
+					scoring = "sum"
+					feedback = "statistics"
+					group-bonus = "0"
+					require-groups = ""
+				>
+					<test comment = "manual cmd: ''" />
+				</test-group>
+				<test-group
+					comment = "1"
+					scoring = "sum"
+					feedback = "outcome"
+					group-bonus = "17"
+					require-groups = ""
+				>
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 0 0 g1'" />
+					<test comment = "generated cmd: 'gen_rnd 0 0 0 0 100000 g1'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 0 100000 0 g1'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 0 1 10'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 0 1 100000'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 0 1 1000000000'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 100000 0 g1'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 1 10'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 10000 100000'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 10000 1000000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 0 100000 0 g1'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 0 1 10'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 0 10000 100000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 0 100000000 1000000000'" />
+				</test-group>
+				<test-group
+					comment = "2"
+					scoring = "sum"
+					feedback = "outcome"
+					group-bonus = "14"
+					require-groups = ""
+				>
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 0 0 g2'" />
+					<test comment = "generated cmd: 'gen_rnd 0 0 0 0 100000 g2'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 100000 0 0 g2'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 10 0 10'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 100000 0 100000'" />
+					<test comment = "generated cmd: 'gen_rnd 10 0 1000000000 0 1000000000'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 100000 0 0 g2'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 10 0 10'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 100000 0 100000'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 1000000000 0 1000000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 100000 0 0 g2'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 10 0 10'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 100000 0 100000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 0 1000000000 0 1000000000'" />
+				</test-group>
+				<test-group
+					comment = "3"
+					scoring = "group"
+					feedback = "group-score-and-test"
+					group-bonus = "20"
+					require-groups = "3 "
+				>
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 0 0 g3'" />
+					<test comment = "generated cmd: 'gen_rnd 0 0 0 0 100000 g3'" />
+					<test comment = "generated cmd: 'gen_g3 10 10 100000 100000 g3'" />
+					<test comment = "generated cmd: 'gen_g3 10 1 10 10'" />
+					<test comment = "generated cmd: 'gen_g3 10 10000 100000 100000'" />
+					<test comment = "generated cmd: 'gen_g3 10 100000000 1000000000 1000000000'" />
+					<test comment = "generated cmd: 'gen_g3 100000 100000 100000 100000 g3'" />
+					<test comment = "generated cmd: 'gen_g3 100000 1 10 10'" />
+					<test comment = "generated cmd: 'gen_g3 100000 10000 100000 100000'" />
+					<test comment = "generated cmd: 'gen_g3 100000 100000000 1000000000 1000000000'" />
+					<test comment = "generated cmd: 'gen_g3 1000000000 1000000000 100000 100000 g3'" />
+					<test comment = "generated cmd: 'gen_g3 1000000000 1 10 10'" />
+					<test comment = "generated cmd: 'gen_g3 1000000000 10000 100000 100000'" />
+					<test comment = "generated cmd: 'gen_g3 1000000000 100000000 1000000000 1000000000'" />
+				</test-group>
+				<test-group
+					comment = "4"
+					scoring = "group"
+					feedback = "group-score-and-test"
+					group-bonus = "20"
+					require-groups = ""
+				>
+					<test comment = "generated cmd: 'gen_rnd 0 0 0 100000 0 g4'" />
+					<test comment = "generated cmd: 'gen_rnd 100000 0 0 0 0 g4'" />
+					<test comment = "generated cmd: 'gen_g4 10 100000 100000 10 g4'" />
+					<test comment = "generated cmd: 'gen_g4 10 1 1 10'" />
+					<test comment = "generated cmd: 'gen_g4 10 10000 10000 100000'" />
+					<test comment = "generated cmd: 'gen_g4 10 100000000 100000000 1000000000'" />
+					<test comment = "generated cmd: 'gen_g4 100000 100000 100000 100000 g4'" />
+					<test comment = "generated cmd: 'gen_g4 100000 1 1 10'" />
+					<test comment = "generated cmd: 'gen_g4 100000 10000 10000 100000'" />
+					<test comment = "generated cmd: 'gen_g4 100000 100000000 100000000 1000000000'" />
+					<test comment = "generated cmd: 'gen_g4 1000000000 100000 100000 1000000000 g4'" />
+					<test comment = "generated cmd: 'gen_g4 1000000000 1 1 10'" />
+					<test comment = "generated cmd: 'gen_g4 1000000000 10000 10000 100000'" />
+					<test comment = "generated cmd: 'gen_g4 1000000000 100000000 100000000 1000000000'" />
+				</test-group>
+				<test-group
+					comment = "5"
+					scoring = "group"
+					feedback = "group-score-and-test"
+					group-bonus = "29"
+					require-groups = "1 2 3 4 5 "
+				>
+					<test comment = "generated cmd: 'gen_rnd 1 1 1 1 1'" />
+					<test comment = "generated cmd: 'gen_rnd 1 1000 1 1000 1'" />
+					<test comment = "generated cmd: 'gen_rnd 1 1000000 1 1000000 1'" />
+					<test comment = "generated cmd: 'gen_rnd 1 1000000000 1 1000000000 1'" />
+					<test comment = "generated cmd: 'gen_rnd 1000 1 1000 1 1000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000 1000 1000 1000 1000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000 1000000 1000 1000000 1000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000 1000000000 1000 1000000000 1000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000 1 1000000 1 1000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000 1000 1000000 1000 1000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000 1000000 1000000 1000000 1000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000 1000000000 1000000 1000000000 1000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 1 1000000000 1 1000000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 1000 1000000000 1000 1000000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 1000000 1000000000 1000000 1000000000'" />
+					<test comment = "generated cmd: 'gen_rnd 1000000000 1000000000 1000000000 1000000000 1000000000'" />
+				</test-group>
+			</testset>
+			<verifier type = "%testlib">
+				<binary executable-id = "x86.exe.win32" file = "check.exe" />
+			</verifier>
+		</script>
+	</judging>
+</problem>

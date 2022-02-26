@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="23" short-name="mutation" url="https://polygon.codeforces.com/p4Dq2Aq/senek_K/mutation">
+    <names>
+        <name language="russian" value="Изменённая ДНК"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <tutorials>
+        <tutorial charset="UTF-8" language="russian" mathjax="true" path="statements/russian/tutorial.tex" type="application/x-tex"/>
+        <tutorial language="russian" path="statements/.pdf/russian/tutorial.pdf" type="application/pdf"/>
+    </tutorials>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>536870912</memory-limit>
+            <test-count>85</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen_one_letter 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10 0" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10 10 1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_mx 9 9 1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_mx 3 3 1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_mx 2 2 1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_len 9 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_len 8 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_len 7 10" group="1" method="generated" points="9.0"/>
+                <test cmd="gen_len 6 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_len 5 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_len 4 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1 1 1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_one_letter 100" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_len 100 10000 the 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_len 100 10000 cardigan" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_len 100 10000 the last great american dynasty" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 1000 0 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 1000 0 3" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 1100 0 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 1100 0 3" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 2000 0 1" group="2" method="generated" points="17.0"/>
+                <test cmd="gen_mx 10000 2000 0 2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1100 1100 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1003 1003 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 2345 2345 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 999 999 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 0 0 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 0 0 2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000 0 0 3" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_one_letter 1000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_len 1000 100000 exile" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_len 1000 100000 my tears ricochet" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_len 1000 100000 mirrorball" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 10000 0" group="3" method="generated" points="21.0"/>
+                <test cmd="gen_mx 100000 1000 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 1123 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 1100 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 30000 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 4000 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 0 0 1" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 0 0 2" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 0 0 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10034 10034 1" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 12345 12345 1" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100000 100000 1" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_mx 99999 99999 1" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_one_letter 100000 1" group="4" method="generated" points="11.0"/>
+                <test cmd="gen_len 100000 10000000 seven" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 10000000 august" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 10000000 this is me trying" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 100984 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 1000 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 10239 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 103228 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 239017 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 3456789 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 0 0 1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 0 0 2" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 0 0 3" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1002672 1002672 1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 10000000 10000000 1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_mx 9999999 9999999 1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_one_letter 100000 2" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 1000000000 illicit affairs" group="5" method="generated" points="42.0"/>
+                <test cmd="gen_len 100000 1000000000 invisible string" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 1000000000 mad woman" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 1000000000 epiphany" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 1000000000 betty" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 1000000000 peace" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_len 100000 1000000000 hoax" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 10000423 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 100240000 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 1123428 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 12345678 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 23456789 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 987654321 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 0 0 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 0 0 2" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 0 0 3" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 1000000000 1000000000 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 999999999 999999999 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 100005235 100005234 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_mx 123456789 123456789 1" group="5" method="generated" points="0.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="complete" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="1" points="9.0" points-policy="complete-group"/>
+                <group feedback-policy="icpc" name="2" points="17.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="icpc" name="3" points="21.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="icpc" name="4" points="11.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="3"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="icpc" name="5" points="42.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="4"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/check.cpp" type="cpp.g++17"/>
+                <binary path="files/check.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_len.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_len.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_mx.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_mx.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_one_letter.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_one_letter.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.g++17"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/mutation_ak.cpp" type="cpp.g++17"/>
+                <binary path="solutions/mutation_ak.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="tests"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sol.cpp" type="cpp.g++17"/>
+                <binary path="solutions/sol.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="rejected" testset="tests"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sol2.cpp" type="cpp.g++17"/>
+                <binary path="solutions/sol2.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="string"/>
+    </tags>
+</problem>

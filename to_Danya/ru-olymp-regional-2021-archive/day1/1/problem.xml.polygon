@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="17" short-name="two-machines" url="https://polygon.codeforces.com/p4OT3IR/dan.io/two-machines">
+    <names>
+        <name language="russian" value="Два станка"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <tutorials>
+        <tutorial charset="UTF-8" language="russian" mathjax="true" path="statements/russian/tutorial.tex" type="application/x-tex"/>
+        <tutorial language="russian" path="statements/.pdf/russian/tutorial.pdf" type="application/pdf"/>
+    </tutorials>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>536870912</memory-limit>
+            <test-count>73</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen_rnd 100000 0 0 0 0 g1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 0 0 0 0 100000 g1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 0 100000 0 g1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 0 1 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 0 1 100000" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 0 1 1000000000" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 0 100000 0 g1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 0 1 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 0 10000 100000" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 0 10000 1000000000" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 0 100000 0 g1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 0 1 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 0 10000 100000" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 0 100000000 1000000000" group="1" method="generated" points="17.0"/>
+                <test cmd="gen_rnd 100000 0 0 0 0 g2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 0 0 0 0 100000 g2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 100000 0 0 g2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 10 0 10" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 100000 0 100000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 10 0 1000000000 0 1000000000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 100000 0 0 g2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 10 0 10" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 100000 0 100000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 1000000000 0 1000000000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 100000 0 0 g2" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 10 0 10" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 100000 0 100000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 0 1000000000 0 1000000000" group="2" method="generated" points="14.0"/>
+                <test cmd="gen_rnd 100000 0 0 0 0 g3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 0 0 0 0 100000 g3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 10 10 100000 100000 g3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 10 1 10 10" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 10 10000 100000 100000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 10 100000000 1000000000 1000000000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 100000 100000 100000 100000 g3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 100000 1 10 10" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 100000 10000 100000 100000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 100000 100000000 1000000000 1000000000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 1000000000 1000000000 100000 100000 g3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 1000000000 1 10 10" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 1000000000 10000 100000 100000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_g3 1000000000 100000000 1000000000 1000000000" group="3" method="generated" points="20.0"/>
+                <test cmd="gen_rnd 0 0 0 100000 0 g4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 100000 0 0 0 0 g4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 10 100000 100000 10 g4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 10 1 1 10" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 10 10000 10000 100000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 10 100000000 100000000 1000000000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 100000 100000 100000 100000 g4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 100000 1 1 10" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 100000 10000 10000 100000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 100000 100000000 100000000 1000000000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 1000000000 100000 100000 1000000000 g4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 1000000000 1 1 10" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 1000000000 10000 10000 100000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_g4 1000000000 100000000 100000000 1000000000" group="4" method="generated" points="20.0"/>
+                <test cmd="gen_rnd 1 1 1 1 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1 1000 1 1000 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1 1000000 1 1000000 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1 1000000000 1 1000000000 1" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000 1 1000 1 1000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000 1000 1000 1000 1000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000 1000000 1000 1000000 1000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000 1000000000 1000 1000000000 1000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000 1 1000000 1 1000000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000 1000 1000000 1000 1000000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000 1000000 1000000 1000000 1000000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000 1000000000 1000000 1000000000 1000000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 1 1000000000 1 1000000000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 1000 1000000000 1000 1000000000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 1000000 1000000000 1000000 1000000000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_rnd 1000000000 1000000000 1000000000 1000000000 1000000000" group="5" method="generated" points="29.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="complete" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="1" points="17.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="2" points="14.0" points-policy="complete-group"/>
+                <group feedback-policy="icpc" name="3" points="20.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="icpc" name="4" points="20.0" points-policy="complete-group"/>
+                <group feedback-policy="icpc" name="5" points="29.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen_g3.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_g3.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_g4.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_g4.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen_rnd.cpp" type="cpp.g++17"/>
+                <binary path="files/gen_rnd.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validate.cpp" type="cpp.g++17"/>
+                <binary path="files/validate.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validate.cpp" type="cpp.g++17"/>
+                <binary path="files/validate.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>6</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/fastest_pencils_do.cpp" type="cpp.g++17"/>
+                <binary path="solutions/fastest_pencils_do.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="tests"/>
+                    <extra-tag group="0" tag="accepted"/>
+                    <extra-tag group="1" tag="accepted"/>
+                    <extra-tag group="2" tag="accepted"/>
+                    <extra-tag group="3" tag="accepted"/>
+                    <extra-tag group="4" tag="accepted"/>
+                    <extra-tag group="5" tag="accepted"/>
+                </extra-tags>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/fastest_pencils_do_g1234.cpp" type="cpp.g++17"/>
+                <binary path="solutions/fastest_pencils_do_g1234.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="wrong-answer" testset="tests"/>
+                    <extra-tag group="0" tag="accepted"/>
+                    <extra-tag group="1" tag="accepted"/>
+                    <extra-tag group="2" tag="accepted"/>
+                    <extra-tag group="3" tag="accepted"/>
+                    <extra-tag group="4" tag="accepted"/>
+                    <extra-tag group="5" tag="wrong-answer"/>
+                </extra-tags>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/fastest_pencils_do_g1234_wa.cpp" type="cpp.g++17"/>
+                <binary path="solutions/fastest_pencils_do_g1234_wa.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="wrong-answer" testset="tests"/>
+                    <extra-tag group="0" tag="accepted"/>
+                    <extra-tag group="1" tag="wrong-answer"/>
+                    <extra-tag group="2" tag="accepted"/>
+                    <extra-tag group="3" tag="wrong-answer"/>
+                    <extra-tag group="4" tag="wrong-answer"/>
+                    <extra-tag group="5" tag="wrong-answer"/>
+                </extra-tags>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/fastest_pencils_mp.py" type="python.3"/>
+                <binary path="solutions/fastest_pencils_mp.pys3" type="pythonx.3"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <documents>
+        <document path="documents/description.txt" type="text/plain"/>
+        <document path="documents/tutorial.txt" type="text/plain"/>
+    </documents>
+    <tags>
+        <tag value="easy"/>
+        <tag value="if"/>
+    </tags>
+</problem>
